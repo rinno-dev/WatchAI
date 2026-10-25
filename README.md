@@ -1,7 +1,5 @@
 # WatchAI
 
-[English](README.md) | [Русский](README.ru.md)
-
 Wear OS chat application with a Gemini-powered assistant.
 
 WatchAI is an independent project that uses the Gemini API provided by Google. It is not affiliated with, endorsed by, or sponsored by Google. Google and Gemini are referenced only to identify the third-party service.
@@ -49,3 +47,55 @@ The debug APK is created at `app/build/outputs/apk/debug/app-debug.apk`.
 ## License
 
 This project is licensed under the MIT License. See `LICENSE`.
+
+---
+
+## Русская версия
+
+Приложение для Wear OS с ИИ-ассистентом на базе Gemini.
+
+WatchAI — независимый проект, использующий Gemini API от Google. Проект не связан с Google, не одобрен и не спонсируется компанией. Названия Google и Gemini упоминаются только для обозначения стороннего сервиса.
+
+### Требования
+
+- Android Studio с Android SDK 34
+- JDK 17 или новее
+- API-ключ Gemini
+
+### Настройка API-ключа
+
+Добавьте ключ в корневой файл `local.properties`. Этот файл исключён из Git:
+
+```properties
+GEMINI_API_KEY=your_api_key_here
+```
+
+Каждому разработчику нужен собственный API-ключ Gemini. В репозитории общего ключа нет.
+
+При сборке ключ встраивается в приложение, и его можно извлечь из APK. Не публикуйте APK с личным или рабочим ключом. Чтобы сохранить рабочий ключ в секрете, нужен сервер-посредник.
+
+### Gemini API и конфиденциальность
+
+Приложение отправляет запросы и контекст диалога в Google через Gemini API. История чатов также хранится локально на часах. Обработка данных Google зависит от используемого API-сервиса и актуальных условий. При бесплатном использовании Google может использовать запросы и ответы для улучшения своих продуктов, а проверяющие могут обрабатывать их вручную. Не отправляйте чувствительную, конфиденциальную или персональную информацию.
+
+Согласно актуальным условиям Gemini API, API предназначен для профессионального или делового использования, а не для потребительских приложений. Также запрещены API-клиенты, рассчитанные на аудиторию младше 18 лет или с высокой вероятностью доступные ей. Перед распространением приложения проверьте актуальные условия: [Дополнительные условия Gemini API](https://ai.google.dev/gemini-api/terms). В правилах Google по бренду также сказано, что нельзя создавать впечатление связи с компанией, её одобрения или спонсорства, если их нет: [Google Brand Resource Center](https://about.google/brand-resource-center/guidance/).
+
+### Сборка
+
+В Windows:
+
+```powershell
+.\gradlew.bat :app:assembleDebug
+```
+
+В macOS или Linux:
+
+```sh
+./gradlew :app:assembleDebug
+```
+
+Готовый debug APK будет в `app/build/outputs/apk/debug/app-debug.apk`.
+
+### Лицензия
+
+Проект распространяется по лицензии MIT. См. файл `LICENSE`.
