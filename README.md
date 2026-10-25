@@ -1,5 +1,7 @@
 # WatchAI
 
+[English](README.md) | [Русский](README.ru.md)
+
 Wear OS chat application with a Gemini-powered assistant.
 
 WatchAI is an independent project that uses the Gemini API provided by Google. It is not affiliated with, endorsed by, or sponsored by Google. Google and Gemini are referenced only to identify the third-party service.
