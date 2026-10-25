@@ -1,0 +1,9 @@
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary_cyan">#FF0284C7</color>
+    <color name="primary_teal">#FF06B6D4</color>
+    <color name="dark_surface">#FF121212</color>
+    <color name="user_bubble">#FF1E293B</color>
+    <color name="bot_bubble">#FF0F172A</color>
+</resources>

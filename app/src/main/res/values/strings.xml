@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">WatchAI</string>
+    <string name="gemini_ai">WatchAI</string>
+    <string name="new_chat">Новый чат</string>
+    <string name="history_empty">История чатов пока пуста</string>
+    <string name="delete_symbol">×</string>
+</resources>
