@@ -14,6 +14,8 @@ WatchAI is an independent project that uses the Gemini API provided by Google. I
 
 Add the key to the root `local.properties` file. That file is excluded from Git:
 
+Create a key in [Google AI Studio](https://aistudio.google.com/apikey); see Google's [API key guide](https://ai.google.dev/gemini-api/docs/api-key).
+
 ```properties
 GEMINI_API_KEY=your_api_key_here
 ```
@@ -50,7 +52,7 @@ This project is licensed under the MIT License. See `LICENSE`.
 
 ---
 
-## Русская версия
+## WatchAI
 
 Приложение для Wear OS с ИИ-ассистентом на базе Gemini.
 
@@ -65,6 +67,8 @@ WatchAI — независимый проект, использующий Gemini
 ### Настройка API-ключа
 
 Добавьте ключ в корневой файл `local.properties`. Этот файл исключён из Git:
+
+Создать ключ можно в [Google AI Studio](https://aistudio.google.com/apikey); инструкция есть в [руководстве Google по API-ключам](https://ai.google.dev/gemini-api/docs/api-key).
 
 ```properties
 GEMINI_API_KEY=your_api_key_here
